@@ -1,10 +1,15 @@
 const ul = document.querySelector('#lista');
 
-//li elem generálása
-
-var li = document.createElement('li');
-
-
-li.textContent = 'szilva';
-ul. append(li);
-
+const gyumolcsok = [
+ 'szilva',
+ 'alma',
+ 'korte',
+ 'barack',
+ 'eper',
+ 'banán'
+];
+gyumolcsok.forEach( (gyumolcs) => {
+    var li = document.createElement('li');
+    li.textContent = gyumolcs;
+    ul. append(li);
+});
